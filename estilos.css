@@ -1,0 +1,240 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.left-header {
+    background-color: green;
+    color: white;
+    width: 70%; 
+    display: flex;
+    align-items: center; 
+    padding-left: 20px; 
+}
+
+.left-header h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.right-header {
+    background-color: blue;
+    color: white;
+    width: 30%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.table-container {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabla th, .tabla td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.tabla th:nth-child(1),
+.tabla th:nth-child(2) {
+    width: 15%; 
+}
+
+.tabla th:nth-child(3) {
+    width: 40%; 
+}
+
+.tabla th:nth-child(4),
+.tabla th:nth-child(5) {
+    width: 15%; 
+}
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.totals div:first-child {
+    display: flex;
+    gap: 10px; 
+}
+
+.btn-teal {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-teal:hover {
+    background-color: darkgreen;
+}
+
+.totals-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.totals-right div {
+    margin-bottom: 15px; 
+    display: flex;
+    flex-direction: column; 
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-field {
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px; 
+    width: 100%;
+    height: 30px; 
+    box-sizing: border-box; 
+}
+
+.input-field:focus {
+    border-color: green;
+    outline: none;
+}
+
+.product-client {
+    display: flex;
+    justify-content: space-between;
+    gap:0; 
+    margin-top: 20px; 
+}
+
+.product, .client {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.product {
+    width: 60%;
+}
+
+.client {
+    width: 40%; 
+}
+
+.product fieldset, .client fieldset {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0px; 
+}
+
+.product div, .client div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.product label, .client label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.product .input-field, .client .input-field {
+    width: 100%; 
+    max-width: 120px; 
+    height: 30px; 
+    box-sizing: border-box; 
+}
+.product button {
+    margin-top: 10px; 
+}
+@media (min-width: 600px) {
+    .header {
+        flex-wrap: nowrap; /* Asegura que el header se mantenga en una sola línea en pantallas más grandes */
+    }
+
+    .left-header {
+        width: 70%; /* Mantiene el ancho del 70% para pantallas más grandes */
+        padding-left: 20px;
+    }
+
+    .right-header {
+        width: 30%; /* Mantiene el ancho del 30% para pantallas más grandes */
+    }
+
+    .product, .client {
+        width: 48%; /* Reduce el ancho para dejar espacio entre columnas */
+    }
+}
+
+@media (max-width: 599px) {
+    .left-header, .right-header {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        padding: 10px;
+    }
+
+    .right-header {
+        margin-top: 10px; /* Añade margen superior para separación en pantallas pequeñas */
+    }
+
+    .totals {
+        flex-direction: column; /* Ajusta la dirección de los elementos en pantallas pequeñas */
+    }
+
+    .totals-right {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+    }
+
+    .product, .client {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+    }
+}
+
+
+
+
+
+
+
